@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>디미고</title>
+<meta charset="UTF-8">
+<!--a 밑줄과 글자색 변경했다 링크는 많이 사용하니 꼭 기억해!!-->
+<style>
+    body {
+            background-color: yellowgreen;
+    }
+    a {
+        text-decoration: none  ;
+        color: blueviolet;
+    }
+</style>
+</head>
+
+<!--메뉴로 돌아가기!!!!    id는 이름적기 부분지정. 이름엔 #없음.  a(링크) 거는 부분에 #이 있는거임. 눌렀을 때 갈 수 있게 - 링크 걸때는 #으로. 화면 이동 가능!-->
+<body>
+스마트문화앱콘텐츠제작<br>
+<ul id="menu">
+    <li><a href="#content1">이미지 태그 연습</a> </li>
+    <li><a href="#content2">그림2</a></li>
+    <li><a href="#content3">그림 설명</a></li>
+</ul>
+
+<p>이미지 태그 연습 중입니다.</p>
+<h2><a href="#content1">이미지 태그 연습</a></h2>
+
+alt는 시각 장애 있는 분들 위해서 낭독가능 이미지! 안내해줄 수 있음! 안내 태그다.<br>
+src 주소 경로다
+2가지 기억! 상대적 경로 / 절대적 경로
+-https://naver.com/주소나옴 여기 부분은 나중에 좀 더 배우고, 구조설계
+         사이트 찾았다! 
+         dimigo.hs.kr 
+         서버 접속 - web담당서비스 페이지에 
+         C:/폴더/폴더   이런식으로
+                       index.htm
+             css         images        java ssript
+                     test.1jpg 있으면  
+            src="test.jpg"
+                "images/test.jpg"      
+            점 2개 상위폴더 한단계위  /는 하위폴더로 내려갑니다.  - 상대적경로 - 내가 있는 곳에서 가져옴 ../../img/a.jpg 
+            웹상에서 데려올 수 있음요. 
+
+<figure>            
+<img src="images/test2.jpg" width="300" height="300" alt="1917">
+<img src="images/test1.jpg">
+<img src="https://www.dimigo.hs.kr/layouts/minimal_dimigo/static/dimigo_logo_white.png">
+<figcaption> 울타리 사진 설명이다!! 제목붙이기 이미지에도 붙일 수 있다.</figcaption>
+</figure>
+
+
+
+<br>c 밑에꺼가   / 링크도 가능?
+이미지 사이트에 다운 안 받고 서버에 있는 거 불러올 수 있음요.
+            
+
+   
+<p><a href="#menu">[메뉴 이동]</a></p>0
+
+<!-- 링크 만들기 target은 새 창으로 띄울 수 있게 -->
+<h2 id="content2"> a 태그</h2>
+<a href="http://www.dimigo.hs.kr" target="_blank"> 디미고 홈페이지</a>
+<!-- a 태그에 target 속성은 탭 어떻게 열지를 정하는 거, _blank : 새 창에서 열기, _self : 같은 화면에서 열기 기본값
+ _parent : 부모 프레임에 표시, _top : 프레임을 벗어나 전체화면 표시-->
+
+
+<h2 id="content3"> 마지막 실습</h2>
+</body>
+
+
+</html>
